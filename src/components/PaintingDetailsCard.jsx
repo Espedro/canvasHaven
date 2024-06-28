@@ -37,19 +37,19 @@ function PaintingDetailsCard({
                 className="btn btn-primary"
                 onClick={() => setToggleEdit(!toggleEdit)}
               >
-                edit
+                Update
               </button>
               <button
                 type="button"
                 className="btn btn-danger bou"
                 onClick={() => deletePainting(_id)}
               >
-                delete
+                Delete
               </button>
             </>
           )}
         </div>
-
+<br />
         {toggleEdit && (
           <EditForm toggleEdit={toggleEdit} setToggleEdit={setToggleEdit} />
         )}
