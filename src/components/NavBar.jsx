@@ -14,14 +14,11 @@ function NavBar() {
         <nav className="navbar navbar-expand-lg">
           <div class="container-fluid">
             <Link to="/">
-            <h1>
-              <a className="logo" href="#">
-                
-                Canva Haven
-               
-              </a>
+              <h1>
+                <a className="logo" href="#">
+                  Canva Haven
+                </a>
               </h1>
-              
             </Link>
             <button
               className="navbar-toggler"
@@ -65,16 +62,16 @@ function NavBar() {
               <span class="navbar-text">
                 {user ? (
                   <div className="center gap-4 p-4">
-                    <button onClick={logout} className="btn btn-light">
+                    <button onClick={logout} className="btn btn-light bou">
                       logout
                     </button>
                   </div>
                 ) : (
                   <div className="center gap-4 p-4">
-                    <Link to="/signup" className="btn btn-light">
+                    <Link to="/signup" className="btn btn-light bou">
                       sign up
                     </Link>
-                    <Link to="/login" className="btn btn-light">
+                    <Link to="/login" className="btn btn-light bou">
                       log in
                     </Link>
                   </div>
