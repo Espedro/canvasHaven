@@ -17,36 +17,43 @@ function PaintingDetailsCard({
 
   return (
     <div>
-      <img src={image} />
+      <center>
+        <img src={image} />
 
-      <div>
-        <h4> {name}</h4>
+        <div>
+          <h4> {name}</h4>
 
-        <p>
-          Artist : {artist} <br />
-          Genre : {genre} <br />
-          Description : {description} <br />
-        </p>
+          <p>
+            Artist : {artist} <br />
+            Genre : {genre} <br />
+            Description : {description} <br />
+          </p>
 
-        {user && user.isAdmin && (
-          <>
-            {" "}
-            <button className="btn " onClick={() => setToggleEdit(!toggleEdit)}>
-              edit
-            </button>
-            <button
-              className="btn bg-amber-700"
-              onClick={() => deletePainting(_id)}
-            >
-              delete
-            </button>
-          </>
+          {user && user.isAdmin && (
+            <>
+              {" "}
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() => setToggleEdit(!toggleEdit)}
+              >
+                edit
+              </button>
+              <button
+                type="button"
+                className="btn btn-danger bou"
+                onClick={() => deletePainting(_id)}
+              >
+                delete
+              </button>
+            </>
+          )}
+        </div>
+
+        {toggleEdit && (
+          <EditForm toggleEdit={toggleEdit} setToggleEdit={setToggleEdit} />
         )}
-      </div>
-
-      {toggleEdit && (
-        <EditForm toggleEdit={toggleEdit} setToggleEdit={setToggleEdit} />
-      )}
+      </center>
     </div>
   )
 }

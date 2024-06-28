@@ -50,7 +50,7 @@ function LoginForm() {
 
 </Form.Group>
 <center>
-      <button type="submit" className="w-50 buton">
+      <button type="submit" className="w-50">
         log in
       </button>
 

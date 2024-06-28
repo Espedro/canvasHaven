@@ -1,7 +1,11 @@
 import SignupForm from "../components/SignupForm"
 
 function SignUpPage() {
-  return <div><h1> Sign Up Page</h1>
+  return <div className="container">
+    
+    <center>
+    <h1> Sign Up Page</h1>
+    </center>
   
   < SignupForm />
   

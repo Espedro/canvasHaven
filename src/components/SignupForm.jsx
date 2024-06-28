@@ -1,6 +1,6 @@
 import { useState, useContext } from "react"
 import { AuthContext } from "../context/auth.context"
-import { Form, Button, Alert } from "react-bootstrap";
+import { Form, Button, Alert } from "react-bootstrap"
 
 function SignupForm() {
   const [signupInfo, setSignupInfo] = useState({
@@ -23,39 +23,49 @@ function SignupForm() {
         signup(signupInfo)
       }}
     >
-      <Form.Group className="mb-2" controlId="username">
-    <Form.Label> <label htmlFor="email">email</label> </Form.Label> 
-      <input
-        type="email"
-        name="email"
-        value={signupInfo.email}
-        onChange={handleChange}
-      />
+      <Form.Group className="mb-2" controlId="email">
+        <Form.Label>
+          {" "}
+          <label htmlFor="email">email</label>{" "}
+        </Form.Label>
+        <Form.Control
+          type="email"
+          name="email"
+          value={signupInfo.email}
+          onChange={handleChange}
+        />
       </Form.Group>
-<Form.Group className="mb-2" controlId="username">
-  
-<Form.Label>    <label htmlFor="username">username</label> </Form.Label>
-      <input
-        type="text"
-        name="username"
-        value={signupInfo.username}
-        onChange={handleChange}
-      />
 
-</Form.Group>
+      <Form.Group className="mb-2" controlId="username">
+        <Form.Label>
+          {" "}
+          <label htmlFor="username">username</label>{" "}
+        </Form.Label>
+        <Form.Control
+          type="text"
+          name="username"
+          value={signupInfo.username}
+          onChange={handleChange}
+        />
+      </Form.Group>
 
-<Form.Label>
-<Form.Label>     <label htmlFor="password">password</label> </Form.Label>
+      <Form.Label>
+        <Form.Label>
+          {" "}
+          <label htmlFor="password">password</label>{" "}
+        </Form.Label>
       </Form.Label>
-      <input
+      <Form.Control
         type="password"
         name="password"
         value={signupInfo.password}
         onChange={handleChange}
       />
-      <button type="submit" className="btn mt-4">
+      < br />
+    <center>  <button type="submit" className="w-50">
         register now
       </button>
+      </center>
     </form>
   )
 }

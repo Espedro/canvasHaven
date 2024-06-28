@@ -19,9 +19,10 @@ function PaintingDetailsPage() {
   }, [painting])
 
   return (
-    <div>
-      PaintingDetailsPage
+    <div className="container">
+      <center> </center>
       <PaintingDetailsCard {...painting} />
+      
     </div>
   )
 }

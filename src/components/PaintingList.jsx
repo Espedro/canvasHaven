@@ -7,9 +7,10 @@ function PaintingList() {
   console.log("this is the paintings data from context ===>", paintings)
 
   return (
-    <div>
+    <div className="row">
       {paintings ? (
         paintings.map((painting) => (
+          <div className="col-lg-3"> 
           <PaintingCard
             key={painting._id}
             painting={painting}
@@ -18,6 +19,7 @@ function PaintingList() {
             description={painting.description}
             id={painting._id}
           />
+          </div>
         ))
       ) : (
         <p>Loading...</p>

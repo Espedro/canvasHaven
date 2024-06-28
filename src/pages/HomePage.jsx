@@ -8,7 +8,11 @@ function HomePage() {
 
 < HeroSection />
 
+<br />
+
+<div className="container">
 <PaintingList />
+</div>
    </div>
   )
 }
