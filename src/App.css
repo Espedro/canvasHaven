@@ -40,3 +40,7 @@
   transform: scale(1.02);
   transition: all 0.03s !important;
 }
+
+.cardd {
+  margin-bottom: 10px !important;
+}
