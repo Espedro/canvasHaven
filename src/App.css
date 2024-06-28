@@ -33,6 +33,10 @@
 }
 
 .bou {
-
   margin: 10px;
+}
+
+.cardd :hover {
+  transform: scale(1.02);
+  transition: all 0.03s !important;
 }
