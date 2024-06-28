@@ -4,16 +4,16 @@ import HeroSection from "../components/HeroSection"
 
 function HomePage() {
   return (
-   <div>
+    <div>
+      <HeroSection />
 
-< HeroSection />
+      <br />
 
-<br />
-
-<div className="container">
-<PaintingList />
-</div>
-   </div>
+      <div className="container">
+        <PaintingList />
+      </div>
+      <br />
+    </div>
   )
 }
 
