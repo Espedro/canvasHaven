@@ -34,7 +34,7 @@ function PaintingDetailsCard({
               {" "}
               <button
                 type="button"
-                className="btn btn-primary"
+                className="btn btn-primary bou"
                 onClick={() => setToggleEdit(!toggleEdit)}
               >
                 Update
