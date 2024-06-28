@@ -10,7 +10,7 @@ function PaintingList() {
     <div className="row">
       {paintings ? (
         paintings.map((painting) => (
-          <div className="col-lg-3"> 
+          <div className="col-lg-3 cardd"> 
           <PaintingCard
             key={painting._id}
             painting={painting}
