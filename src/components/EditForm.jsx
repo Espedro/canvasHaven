@@ -24,13 +24,17 @@ function EditForm({ toggleEdit, setToggleEdit }) {
           updatePainting(currPainting, paintingId, setToggleEdit)
         }}
       >
+        <div class="mb-3">
         <label htmlFor="name">Name</label>
         <input
           type="text"
           name="name"
           onChange={handleChange}
           value={currPainting.name}
+          className="form-control"
         />
+        </div>
+        <div class="mb-3">
 
         <label htmlFor="artist">Artist</label>
         <input
@@ -38,34 +42,47 @@ function EditForm({ toggleEdit, setToggleEdit }) {
           name="artist"
           onChange={handleChange}
           value={currPainting.artist}
+          className="form-control"
         />
 
+</div>
+<div class="mb-3">
         <label htmlFor="genre">Genre</label>
         <input
           type="text"
           name="genre"
           onChange={handleChange}
           value={currPainting.genre}
+          className="form-control"
         />
 
+</div>
+<div class="mb-3">
         <label htmlFor="description"> Description </label>
         <input
           type="text"
           name="description"
           onChange={handleChange}
           value={currPainting.description}
+          className="form-control"
         />
 
+</div>
+
+<div class="mb-3">
         <label htmlFor="image">Image</label>
         <input
           type="text"
           name="image"
           onChange={handleChange}
           value={currPainting.image}
+          className="form-control"
         />
 
-        <button type="submit" className="btn">
-          edit
+</div>
+
+        <button type="submit" className="btn btn-success w-50">
+          Update
         </button>
       </form>
     )
