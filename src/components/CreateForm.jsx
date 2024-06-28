@@ -75,7 +75,7 @@ function CreateForm() {
 </div>
 <center>
       <button type="submit" className="btn btn-primary w-50">
-        create
+        Create
       </button>
       </center>
     </form>
