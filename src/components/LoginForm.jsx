@@ -24,10 +24,6 @@ function LoginForm() {
     >
 
 
-       
-      
-
-
 <Form.Group className="mb-2" controlId="username">
     <Form.Label> Username / Email </Form.Label> 
       < Form.Control
