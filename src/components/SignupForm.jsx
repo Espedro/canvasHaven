@@ -62,8 +62,8 @@ function SignupForm() {
         onChange={handleChange}
       />
       < br />
-    <center>  <button type="submit" className="w-50">
-        register now
+    <center>  <button type="submit" className="btn btn-primary w-50">
+        Register now
       </button>
       </center>
     </form>
